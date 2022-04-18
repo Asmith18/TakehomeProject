@@ -8,8 +8,14 @@
 import UIKit
 
 class MovieTableViewCell: UITableViewCell {
-
-    func updateViews() {
-        
+    
+//MARK: - Outlets
+    @IBOutlet weak var movieNameTextLabel: UILabel!
+    @IBOutlet weak var ratingTextLabel: UILabel!
+    
+    
+    func updateViews(movie: Movie) {
+        self.movieNameTextLabel.text = movie.title
+        ratingTextLabel.text = "\(movie.rating)"
     }
 }

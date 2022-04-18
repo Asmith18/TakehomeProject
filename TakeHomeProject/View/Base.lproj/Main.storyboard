@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="2121.739130434783" y="105.80357142857143"/>
         </scene>
-        <!--Movie Details View Controller-->
+        <!--Movie Details-->
         <scene sceneID="aij-iq-rvm">
             <objects>
                 <viewController id="I55-jA-xOn" customClass="MovieDetailsViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,9 +91,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-WK-PhH">
-                                <rect key="frame" x="100" y="159.5" width="214" height="280.5"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-WK-PhH">
+                                <rect key="frame" x="120" y="158.5" width="174" height="283"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="283" id="s5R-Pc-cMw"/>
                                 </constraints>
@@ -116,7 +117,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-jT-uU4">
                                 <rect key="frame" x="8" y="130" width="398" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -126,8 +127,8 @@
                             <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="8bq-6s-EaC" secondAttribute="trailing" constant="20" id="6BH-3k-Z7P"/>
                             <constraint firstItem="Wje-jc-oGD" firstAttribute="bottom" secondItem="VmT-iR-Sff" secondAttribute="bottom" id="7aZ-g7-pdk"/>
                             <constraint firstItem="jyK-WK-PhH" firstAttribute="top" secondItem="ZYZ-jT-uU4" secondAttribute="bottom" constant="8" symbolic="YES" id="Btc-Ak-YPP"/>
-                            <constraint firstItem="jyK-WK-PhH" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="100" id="HRm-rx-64q"/>
-                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="jyK-WK-PhH" secondAttribute="trailing" constant="100" id="Hdh-f5-vBf"/>
+                            <constraint firstItem="jyK-WK-PhH" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="120" id="HRm-rx-64q"/>
+                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="jyK-WK-PhH" secondAttribute="trailing" constant="120" id="Hdh-f5-vBf"/>
                             <constraint firstItem="ZYZ-jT-uU4" firstAttribute="top" secondItem="8bq-6s-EaC" secondAttribute="bottom" constant="5" id="Idj-C9-M0u"/>
                             <constraint firstItem="jyK-WK-PhH" firstAttribute="centerX" secondItem="VmT-iR-Sff" secondAttribute="centerX" id="Odr-w3-7dP"/>
                             <constraint firstItem="8bq-6s-EaC" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="20" id="OuN-fJ-hcr"/>
@@ -139,7 +140,7 @@
                             <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="ZYZ-jT-uU4" secondAttribute="trailing" constant="8" id="yap-lT-zgq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wsu-Xg-mnQ"/>
+                    <navigationItem key="navigationItem" title="Movie Details" id="wsu-Xg-mnQ"/>
                     <connections>
                         <outlet property="dateTextLAbel" destination="ZYZ-jT-uU4" id="s5B-JR-PuF"/>
                         <outlet property="moveTitleTextLabel" destination="8bq-6s-EaC" id="8ym-kz-RRf"/>
@@ -171,12 +172,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="photo.artframe" catalog="system" width="128" height="93"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

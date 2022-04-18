@@ -25,7 +25,7 @@ class MovieDetailsViewController: UIViewController {
         guard let movie = movie else { return }
         moveTitleTextLabel.text = movie.title
         movieOverviewTextView.text = movie.overview
-        dateTextLAbel.text = movie.date
+        dateTextLAbel.text = "Release Date: \(movie.date)"
         
         MovieNetworkController.getImage(from: movie.posterPath) { image in
             DispatchQueue.main.async {

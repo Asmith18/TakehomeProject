@@ -7,22 +7,33 @@
 
 import Foundation
 
-struct Movie {
-    var results: [MovieResults]
-}
-
-struct MovieResults {
-    private enum Keys: String {
+class Movie {
+//MARK: - Keys
+    enum Keys: String {
         case title = "title"
         case overview = "overview"
-        case releaseDate = "release_date"
-        case voteAverage = "vote_average"
+        case rating = "vote_average"
         case posterPath = "poster_path"
+        
+    
     }
     
-    var title: String
-    var overview: String
-    var releaseDate: String
-    var voteAverage: Double
-    var posterPath: String
+    let title: String
+    let overview: String
+    let rating: Double
+    let posterPath: String
+    
+    init?(fromDictionary dictionary: [String: Any]) {
+        guard let title = dictionary[Keys.title.rawValue] as? String,
+              let overview = dictionary[Keys.overview.rawValue] as? String,
+              let rating = dictionary[Keys.rating.rawValue] as? Double,
+              let posterPath = dictionary[Keys.posterPath.rawValue] as? String
+        else { return nil }
+        
+        self.title = title
+        self.overview = overview
+        self.rating = rating
+        self.posterPath = (dictionary[Keys.posterPath.rawValue] as? String) ?? ""
+    }
 }
+

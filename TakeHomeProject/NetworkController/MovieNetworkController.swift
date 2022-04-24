@@ -37,7 +37,6 @@ class MovieNetworkController {
         }
         
         URLSession.shared.dataTask(with: finalURL) { data, _, error in
-            
             if let error = error {
                 print(error)
             }
@@ -47,9 +46,7 @@ class MovieNetworkController {
                 completion(nil)
                 return
             }
-            
             do {
-                
                 guard let data = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String: Any],
                       let movieArray = data["results"] as? [[String: Any]]
                 else {
@@ -68,10 +65,8 @@ class MovieNetworkController {
                     }
                 }
                 completion(movieHolder)
-                
             } catch let error {
                 print(error)
-                
                 completion(nil)
             }
         }.resume()
@@ -85,18 +80,14 @@ class MovieNetworkController {
         
         guard let finalURL = urlComponents?.url else { completion(nil); return }
         URLSession.shared.dataTask(with: finalURL) { data, _, error in
-            
             if let error = error {
                 print(error)
-                
             }
             
             guard let data = data,
                   let image = UIImage(data: data)
             else { completion(nil); return }
-            
             completion(image)
-            
         }.resume()
     }
 }

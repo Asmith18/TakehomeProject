@@ -21,10 +21,8 @@ class MovieSearchTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return movies.count
     }
-
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        guard let cell = tableView.dequeueReusableCell(withIdentifier: "movieCell", for: indexPath) as? MovieTableViewCell else { return UITableViewCell() }
@@ -58,7 +56,6 @@ extension MovieSearchTableViewController: UISearchBarDelegate {
         MovieNetworkController.fetchMoviesWith(name: searchTerm) { movies in
             guard let movies = movies else { return }
             self.movies = movies
-            
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }

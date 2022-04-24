@@ -83,7 +83,7 @@
             </objects>
             <point key="canvasLocation" x="2121.739130434783" y="105.80357142857143"/>
         </scene>
-        <!--Movie Details-->
+        <!--Details-->
         <scene sceneID="aij-iq-rvm">
             <objects>
                 <viewController id="I55-jA-xOn" customClass="MovieDetailsViewController" customModule="TakeHomeProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -91,56 +91,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-WK-PhH">
-                                <rect key="frame" x="120" y="158.5" width="174" height="283"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="283" id="s5R-Pc-cMw"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wje-jc-oGD">
-                                <rect key="frame" x="20" y="449.5" width="374" height="412.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bq-6s-EaC">
-                                <rect key="frame" x="20" y="88" width="374" height="37"/>
+                                <rect key="frame" x="166.5" y="88" width="81" height="37"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="-2"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYZ-jT-uU4">
-                                <rect key="frame" x="8" y="130" width="398" height="20.5"/>
+                                <rect key="frame" x="189" y="130" width="36" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyK-WK-PhH">
+                                <rect key="frame" x="127" y="175.5" width="160" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jyK-WK-PhH" secondAttribute="height" multiplier="2:3" id="UMY-03-rS0"/>
+                                    <constraint firstAttribute="width" constant="160" id="hdG-Sk-JLo"/>
+                                    <constraint firstAttribute="height" constant="240" id="jzS-zh-fls"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Wje-jc-oGD">
+                                <rect key="frame" x="20" y="465.5" width="374" height="412.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="412.5" id="Yjv-Qo-RtK"/>
+                                    <constraint firstAttribute="width" constant="374" id="gMv-XX-rNF"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VmT-iR-Sff"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="8bq-6s-EaC" secondAttribute="trailing" constant="20" id="6BH-3k-Z7P"/>
-                            <constraint firstItem="Wje-jc-oGD" firstAttribute="bottom" secondItem="VmT-iR-Sff" secondAttribute="bottom" id="7aZ-g7-pdk"/>
-                            <constraint firstItem="jyK-WK-PhH" firstAttribute="top" secondItem="ZYZ-jT-uU4" secondAttribute="bottom" constant="8" symbolic="YES" id="Btc-Ak-YPP"/>
-                            <constraint firstItem="jyK-WK-PhH" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="120" id="HRm-rx-64q"/>
-                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="jyK-WK-PhH" secondAttribute="trailing" constant="120" id="Hdh-f5-vBf"/>
-                            <constraint firstItem="ZYZ-jT-uU4" firstAttribute="top" secondItem="8bq-6s-EaC" secondAttribute="bottom" constant="5" id="Idj-C9-M0u"/>
-                            <constraint firstItem="jyK-WK-PhH" firstAttribute="centerX" secondItem="VmT-iR-Sff" secondAttribute="centerX" id="Odr-w3-7dP"/>
-                            <constraint firstItem="8bq-6s-EaC" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="20" id="OuN-fJ-hcr"/>
-                            <constraint firstItem="ZYZ-jT-uU4" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="8" id="RZL-O0-cwf"/>
-                            <constraint firstItem="Wje-jc-oGD" firstAttribute="leading" secondItem="8bq-6s-EaC" secondAttribute="leading" id="YLV-NG-sOJ"/>
-                            <constraint firstItem="Wje-jc-oGD" firstAttribute="trailing" secondItem="8bq-6s-EaC" secondAttribute="trailing" id="d7C-9i-wEv"/>
-                            <constraint firstItem="8bq-6s-EaC" firstAttribute="top" secondItem="VmT-iR-Sff" secondAttribute="top" id="qiJ-cn-b3N"/>
-                            <constraint firstItem="Wje-jc-oGD" firstAttribute="top" secondItem="jyK-WK-PhH" secondAttribute="bottom" constant="8" symbolic="YES" id="wvd-RD-0Gy"/>
-                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="ZYZ-jT-uU4" secondAttribute="trailing" constant="8" id="yap-lT-zgq"/>
+                            <constraint firstItem="ZYZ-jT-uU4" firstAttribute="top" secondItem="8bq-6s-EaC" secondAttribute="bottom" constant="5" id="SH4-8h-beg"/>
+                            <constraint firstItem="jyK-WK-PhH" firstAttribute="centerX" secondItem="ZYZ-jT-uU4" secondAttribute="centerX" id="TUr-AN-Wa4"/>
+                            <constraint firstItem="jyK-WK-PhH" firstAttribute="top" secondItem="ZYZ-jT-uU4" secondAttribute="bottom" constant="25" id="Twt-k0-7zv"/>
+                            <constraint firstItem="VmT-iR-Sff" firstAttribute="trailing" secondItem="Wje-jc-oGD" secondAttribute="trailing" constant="20" id="XKf-GI-bIz"/>
+                            <constraint firstItem="ZYZ-jT-uU4" firstAttribute="centerX" secondItem="Rat-Kv-1K6" secondAttribute="centerX" id="etm-3Z-EmF"/>
+                            <constraint firstItem="Wje-jc-oGD" firstAttribute="leading" secondItem="VmT-iR-Sff" secondAttribute="leading" constant="20" id="fUU-eh-FIW"/>
+                            <constraint firstItem="Wje-jc-oGD" firstAttribute="top" secondItem="jyK-WK-PhH" secondAttribute="bottom" constant="50" id="gz5-9u-c2b"/>
+                            <constraint firstItem="8bq-6s-EaC" firstAttribute="top" secondItem="VmT-iR-Sff" secondAttribute="top" id="nBn-pO-JfN"/>
+                            <constraint firstItem="Wje-jc-oGD" firstAttribute="centerX" secondItem="Rat-Kv-1K6" secondAttribute="centerX" id="nO6-dp-xlM"/>
+                            <constraint firstItem="8bq-6s-EaC" firstAttribute="centerX" secondItem="VmT-iR-Sff" secondAttribute="centerX" id="qNu-KB-WjS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Movie Details" id="wsu-Xg-mnQ"/>
+                    <navigationItem key="navigationItem" title="Details" id="wsu-Xg-mnQ"/>
                     <connections>
                         <outlet property="dateTextLAbel" destination="ZYZ-jT-uU4" id="s5B-JR-PuF"/>
                         <outlet property="moveTitleTextLabel" destination="8bq-6s-EaC" id="8ym-kz-RRf"/>
